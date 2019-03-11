@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value = "WeBook" ></dbname>
+
+    <version value = "15"></version>
+
+    <list>
+        <mapping class="com.example.hellolisa.my_weibo.db.user"></mapping>
+        <mapping class="com.example.hellolisa.my_weibo.db.webook"></mapping>
+        <mapping class="com.example.hellolisa.my_weibo.db.good"></mapping>
+        <mapping class="com.example.hellolisa.my_weibo.db.pinglun"></mapping>
+        <mapping class="com.example.hellolisa.my_weibo.db.zhuanfa"></mapping>
+    </list>
+</litepal>

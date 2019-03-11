@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/mdraw"
+        android:layout_width="400dp"
+        android:layout_height="700dp">
+        <!--主界面-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mimguser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <Button
+                    android:id="@+id/button_updata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更改"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tmuser_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tuser_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地区："
+                android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/medit_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                android:id="@+id/tuser_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="性别："
+                android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/medit_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/tuser_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生日："
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/medit_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tuser_self"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="个人简介："
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/medit_self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-----------------------------"
+                android:textSize="5sp"
+                android:background="#ffffff"
+                android:textColor="#ffffff"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lstmWB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+        <!--侧滑界面-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ded3d3"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/mtuser_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"/>
+
+
+            <Button
+                android:id="@+id/mbutton_write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发表新微博"
+                />
+
+            <Button
+                android:id="@+id/mbutton_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关于我"
+                />
+
+            <Button
+                android:id="@+id/mbutton_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                />
+
+            <Button
+                android:id="@+id/mbutton_massage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的消息"
+                />
+
+            <Button
+                android:id="@+id/mbutton_quitto_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="退出登陆"
+                />
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
